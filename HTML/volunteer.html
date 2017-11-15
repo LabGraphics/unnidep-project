@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<html lang="en">
+<head>
+<title>UNNIDEP</title>
+<meta name="viewport" content="width=devicewith, initial-scale=1"
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../CSS/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div id="wrapper">
+
+<div class="logo container">
+<img src="../IMAGES/UNNIDEP LOGO-01.png" alt="UNNIDEP LOGO" height="170" width="210">
+</div>
+<div class="text">UNION FOR NIMBA DEVELOPMENT & PROGRESS</div>
+<div class="motto">"OUR HEARTS AND HANDS IN UNION FOR A COMMON PURPOSE"</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="email">info@unnidep.org</a>
+  <a href="phone">678-439-6407</a>
+  <a href="https://www.facebook.com/unnidep"class="fa fa-facebook"></a>
+</div>
+
+<div class="navbar">
+	<ul>
+ 		<li><a href="index.html">HOME</a></li> 
+  		<li><a href="how it all started.html">HOW IT ALL STARTED</a></li>
+  		<li><a href="who we are.html">WHO WE ARE</a> 
+        	
+            <ul>
+            	<li><a href="our mission.html">OUR MISSION</a></li> 
+                <li><a href="our vision.html">OUR VISION</a></li>
+                <li><a href="our values.html">OUR VALUES</a></li>
+                <li><a href="our goals.html">OUR GOALS</a></li>
+            </li>
+             </ul> 
+                <li><a href="get involved.html">GET INVOLVED</a>
+        	<ul>
+            	<li><a href="become a member.html">BECOME A MEMBER</a></li> 
+                <li><a href="become a partner.html">BECOME A PARTNER</a></li>
+                <li><a href="volunteer.html">VOLUNTEER</a>
+                </li>
+             </ul>  
+                <li><a href="meet our team.html">MEET OUR TEAM</a></li>         
+                <li><a href="gallery.html">GALLERY</a>
+              <ul>  
+                <li><a href="photos.html">PHOTOS</a></li> 
+                <li><a href="videos.html">VIDEOS</a></li>
+              </li>
+             </ul>   
+	      </ul>
+</div>
+
+</div>
+ <h1>LEND YOUR SKILLS OR EXPERTISE TO UNNIDEP:</h1>
+  <p>Whether or not you are skilled and just looking to support Our cause, 
+     we are glad to have you. UNNIDEP, as an emerging nonprofit is always 
+     looking for ways to be effecient and effective in carrying out its mission.
+     Our organization has grown so rapidly in just over a year with  membership 
+     well over 300 spanning from Atlanta to Philadelphia. In Our committment to 
+     making a difference and improving lives in Nimba County, Liberia, we are 
+     constantly seeking the talents, skills, passion, and goodwill of people outside
+     our organization to advance our mission.    
+     We value you and are thrilled to have you. Please fill out the form below and 
+     a member of our team will be in contact with you.</p>
+
+<!-- One "tab" for each step in the form: -->
+  <div class="tab">
+    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+    <p><input placeholder="Middle Name..." oninput="this.className = ''" name="mname"></p>
+    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+  </div>
+  <div class="tab">
+    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+  </div>
+  <div class="tab">
+    <p><input placeholder="Street Address..." oninput="this.className = ''" name="streeaddress"></p>
+    <p><input placeholder="City..." oninput="this.className = ''" name="city"></p>
+    <p><input placeholder="State / Province / Region..." oninput="this.className = ''" name="s/p/r/"></p>
+    <p><input placeholder="Postal Zipcode..." oninput="this.className = ''" name="zcode"></p> 
+  </div>
+  <div class="tab">
+    <p><input placeholder="Any special skills or talent..." oninput="this.className = ''" name="skills"></p>
+    <p><input placeholder="Language..." oninput="this.className = ''" name="language"></p>
+  </div>
+   <div class="tab">
+    <p><input placeholder="Signed by (Your Full Name)" oninput="this.className = ''" name="signature"></p>
+    <p><input placeholder="Date (dd/mm/yyyy)" oninput="this.className = ''" name="date"></p>
+  </div>
+   <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+</div>
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+<footer>
+
+<footer class="flex-rw">
+  
+  <ul class="footer-list-top">
+    <li>
+      <h4 class="footer-list-header">ABOUT UNNIDEP</h4></li>
+    <li><a href="how it all started.html">GET TO KNOW US</a></li>
+    <li><a href="become a member.html">BECOME A MEMBER</a></li>
+    <li><a href="become a partner.html">BECOME A PARTNER</a></li>
+    
+  </ul>
+  
+  <ul class="footer-list-top">
+   <li><h4 class="footer-list-header">CONNECT WITH US</h4></li>
+   <li><a href="contactus.html">CONTACT US</a></li>
+   <li><a href="https://www.facebook.com/unnidep"class="fa fa-facebook"></a></li>  
+  </ul>   
+
+ <ul class="footer-list-top">
+   <li id="help"><h4 class="footer-list-header">RESOURCES</h4></li>
+   <li><a href="our bylaws.html">UNNIDEP BYLAWS</a></li>
+   <li><a href="calendar.html">2017 CALENDAR</a></li>
+ </ul>
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright"></i> 2017 UNNIDEP in Clarkston, GA
+ 
+<span class="footer-bottom-rights"> - All Rights Reserved - </span>
+    
+</footer>
+</div>
+</html>
+

@@ -1,0 +1,644 @@
+
+
+body	 {  max-width: 1200px;
+            margin: auto;	;
+			background: #CCC;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: 300; }
+			
+
+#wrapper      { margin: 10px auto;
+                width: 100%;
+                background-color:#fff;
+                width: 1200px;
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+				margin-top: 10px;}		   
+
+.logo container { position: relative; }
+    			
+.text           {position:absolute; 				
+                 left: 620px;
+			     top:80px;
+				 font-size: 34px;
+				 font-weight: bold;
+				 color: #006738;
+				
+				       
+				 }				
+
+.motto          {position:absolute; 				
+                 left: 700px;
+			     top:128px;
+				 font-size: 18px;
+				 color: #006738;
+				 text-decoration:underline; 
+				 font-weight: bold;
+				 cbox-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);olor: #006738;
+				                                       }
+/*...................begin topnav...................*/
+												
+.topnav  	{	background-color: #999;
+			    overflow: hidden;
+                font-family: san serif;                       }
+
+.topnav a   {	float: right;
+				display: block;
+				color: #fff;
+				text-align: center;
+				padding: 14px 50px;
+				text-decoration: none;
+				font-size: 20px;
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+				                      }
+                
+.topnav a:hover {	background-color: #006738;
+					color: black;
+                                          }
+.topnav a.active {  background-color: #006738;
+					color: white;
+
+                                            }	
+
+/*...................end topnav...................*/
+
+
+
+/*..................begin navbar...................*/
+.navbar {
+	width: 100%;
+	height: 60px;
+	background-color: #006738;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.navbar a:hover	 { background-color: #999;
+                                            }
+
+.navbar ul li {
+	list-style: none;
+	float: left;
+	position: relative;
+}
+
+.navbar ul li a {
+	display: block;
+	padding: 28px 30px;
+	font-family: serif;
+	font-size:18px;
+	color: #fff;
+	text-decoration: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.navbar ul li ul {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 0px 0px 4px 4px;
+}
+
+.navbar ul li:hover ul {
+	display: block;
+}
+
+.navbar ul li ul li {
+	clear: both;
+	width: 180px;
+	border-radius: 4px;
+}
+
+.navbar ul li ul li a {
+	display: block;
+	padding: 11px 10px;
+	font-family: serif;
+	color: #006738;
+	text-decoration: none;
+}
+
+.navbar ul li ul li:hover {
+	background-color: #ccc;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*...................end navbar...................*/
+
+
+/*...................begin team cloumn...................*/
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin: 5px
+    padding: 0 20px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.team1 {
+    padding: 0 10px;
+}
+
+/* Clear floats */
+.team1::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+
+.button:hover {
+    background-color: #555;
+}									
+/*...................end team column...................*/
+
+
+/*...................begin mainpage...................*/
+
+.mainimage 			{ max-width: 1000px;
+                      position: right;
+					  margin: auto;
+                                          }
+.heading2	       {  font-size: 1.2em;
+                      margin: 40px;
+                      font-weight: bold;
+					  color: #006738;
+					  text-align: center;
+					  line-height: 1.4;
+					  display:block;
+					  	}
+.main paragraph    {  font-size: 1em;
+                      margin: 40px;
+                      font-weight:300 ;
+					  color: #006738;
+					  text-align:justify;
+					  line-height: 1.4;
+					  
+                                             }
+/*...................end mainpage...................*/
+
+
+/*...................BEGIN MAIN PAGE  FIRST TABLE DONATE,JOIN OUR CAUSE, CURRENT PROJECT...................*/
+table, th, td 		{ border: 1px solid white;
+                      font-family: helvetica;   
+                      color: white;                          }
+th, td 				{ padding: 10px;
+                      margin: 0px 10px;
+                                                }		
+table, th, td 		{ border: 1px;
+                                                }
+table               { border-spacing: 20px
+                                             }									  
+
+th                  { background-color: #006738; 
+    				  border: 16px solid white; /* Green border */
+                      color: white; /* White text */
+                      padding: 25px 24px; /* Some padding */
+                      cursor: pointer; /* Pointer/hand icon */
+                      float: center; /* Float the buttons side by side */
+                      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                                                                       }            
+
+td 					{ text-align:center;
+                      font-color: #fff;
+					  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                                                                           }
+th:hover 			{ background-color: #999;
+                                                  }																				td: hover			{ background-color:#999;	  }  
+/*...................END MAIN PAGE  FIRST TABLE DONATE,JOIN OUR CAUSE, CURRENT PROJECT...................*/
+
+
+/*...................BEGIN MAIN PAGE  SECOND TABLE HEALTHCARE, EDUCATION...................*/												
+table#t2            { background-color: #fff; 
+                                                 }
+													
+table#t2 th, td 	{ padding: 10px;
+                      margin: 0px auto;
+                      font-family: serif;                             }		
+table#t2, th, td 	{ border: 1px;
+                                                }																		table#t2 			{ border-spacing: 25px;
+				
+												} 
+
+table#t2 th         { background-color: #006738; 
+    				  border: 16px solid white; /* Green border */
+                      color: white; /* White text */
+                      padding: 25px 24px; /* Some padding */
+                      cursor: pointer; /* Pointer/hand icon */
+                      float: center; /* Float the buttons side by side */
+                      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                                                                       }            
+table#t2 td        { align: right; 
+                                                 }   
+												 
+table#t2 th:hover  { background-color: #999;
+                                                  }																				table#t2 td: hover { background-color:#999;	  }  
+												  
+#information            {  display: -webkit-flex; /* Safari */
+                          -webkit-align-items: center; /* Safari 7.0+ */
+                           display: flex;
+                           align-items: center;
+               
+                     
+					                            }
+												
+#information2            {  display: -webkit-flex; /* Safari */
+                          -webkit-align-items: center; /* Safari 7.0+ */
+                           display: flex;
+                           align-items: center;
+               
+                     
+					                            }												
+					    
+/*...................END MAIN SECOND TABLE HEALTHCARE, EDUCATION ...................*/												 
+
+
+/*...................BEGIN MAIN PAGE  THIRD TABLE ...................*/												table#t3            { background-color: #fff; 
+                                                 }
+													
+table#t3 th, td 	{ padding: 10px;
+                      margin: 0px auto;
+                      font-family: serif;                             }		
+table#t3, th, td 	{ border: 1px;
+                                                }																		table#t3 			{ border-spacing: 25px;
+				
+												} 
+
+table#t3 th         { background-color: #006738; 
+    				  border: 16px solid white; /* Green border */
+                      color: white; /* White text */
+                      padding: 25px 24px; /* Some padding */
+                      cursor: pointer; /* Pointer/hand icon */
+                      float: center; /* Float the buttons side by side */
+                      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                                                                       }            
+table#t3 td        { align: right; 
+                                                 }   
+												 
+table#t3 th:hover  { background-color: #999;
+                                                  }																				table#t3 td: hover { background-color:#999;	  }  
+												  
+												   
+/*...................BEGIN MAIN PAGE  THIRD TABLE ...................*/													 
+												 
+
+/*...................begin mission page...................*/
+.statement         { text-align:center;
+                     text-align: center;
+					 margin:40px  auto;     
+					 color: #006738; 
+					              }
+                                               
+											   
+
+
+/*...................end mission page...................*/
+
+
+/*...................begin vision page...................*/
+
+.statement2				{ text-align: center;
+						  margin:40px auto;     
+					      color: #006738; 
+					              }
+
+.vision                { display: block;
+                          margin: 10px 450px;
+						  opacity: 0.2;             }
+/*...................end vision page...................*/
+
+/*...................begin goals page...................*/
+.statement3				{ text-align: center;
+						  margin:50px auto;     
+					      color: #006738; 
+					              }
+
+.goalstatement ul           {
+						  margin: 0px, auto;    
+					      color: #006738; 
+						  font-size: 16px;
+						  font-weight:bold;
+						  font-family: helvetica;
+						                             }
+						             
+/*...................end goals page...................*/
+
+/*...................begin values page...................*/
+
+.statement4				{ text-align: center;
+                          text-decoration:underline;
+						  margin:50px auto;     
+					      color: #006738; 
+					              }
+
+.values                { display: block;
+                          margin: 10px 450px;
+						  opacity: 0.2;             }
+
+.valuestatement ul           {
+						  margin: 0px, auto;    
+					      color: #006738; 
+						  font-size: 18px;
+						  font-weight:bold;
+						  font-family: helvetica;
+						                             }
+
+
+
+/*...................end values page...................*/
+
+
+/*...................membership form begin...................*/
+* {
+  box-sizing: border-box;
+  
+}
+body {
+  background-color: #fff;
+}
+#registration
+
+.regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: serif;
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+  margin:20px 40px;
+  
+}
+h1 {
+  text-align: center;
+  margin: 70px auto; 
+  text-decoration:underline;
+  color: #006738; 
+}
+ p      { 
+                      font-size: 1.2em;
+                      margin: 40px;
+                      font-weight: bold;
+					  color: #006738;
+					  text-align:justify;
+					  line-height: 1.4;
+					  display:block;
+					  	}  
+
+input {
+  padding: 10px;
+  width: 50%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #006738;
+  margin:0px 375px;
+}
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+button {
+  background-color: #006738;
+  color: #ffffff;
+  border: none;
+  padding: 12px 50px;
+  font-size: 18px;
+  font-family: Raleway;
+  cursor: pointer;
+  margin: 0px 325px;
+}
+button:hover {
+  opacity: 0.8;
+}
+#prevBtn {
+  background-color: #999;
+}
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #006738;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/*...................how it all started begin...................*/
+
+.logomeaning   { display: block;
+                 margin: 0 300px;
+				
+                                        }
+
+/*...................how it all started begin...................*/
+
+
+
+
+
+
+/*...................volunteer form begin...................*/
+
+h1 {
+  text-align: center;
+  margin: 70px auto; 
+  text-decoration:underline;
+  color: #006738; 
+}
+/*...................volunteer form end...................*/
+
+/*.................begin gallery................*/
+.gallerycontainer {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+	color: #fff;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	text-align:center; 
+}
+
+/*.................end gallery..................*/
+
+
+.unnidep{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+
+.unnidep img{
+	display: block;
+  margin: auto;
+}
+
+.unnidep .caption{
+	margin: 15px auto;
+	width: 50%;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 700;
+	color: #eee;
+}
+
+/*.................current projects begin......*/
+
+.container {
+    padding: 10px 60px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+	
+}
+
+
+
+
+/*.................current projects end.......*/												  
+
+
+
+												  
+/*...................footer...................*/
+
+ul {
+  list-style: none
+}
+a {
+  text-decoration: none
+}
+
+.flex-rw {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main {
+  flex: 1 1 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 10em "Oswald", sans-serif;
+  color: #006738;
+  line-height: 1
+}
+footer {
+  background: #006738;
+  margin-top: auto;
+  width: 100%
+}
+.footer-list-top {
+  width: 33.333%
+}
+.footer-list-top > li {
+  text-align: center;
+  padding-bottom: 15px
+}
+.footer-list-header {
+  padding: 10px 0 5px 0;
+  color: #fff;
+  font: 1.1vw, sans-serif
+}
+.footer-list-anchor {
+  font: 1em "Open Sans", sans-serif
+}
+
+
+ 
+ 
+.ccheader h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+}
+.ccheader {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.ccheader h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.3;
+}
+
+/* Form CSS*/
+.ccform {
+  text-align: center;
+  margin: 70px auto; 
+  color: #006738;  
+   
+}
+.ccfield-prepend{
+	margin-bottom:15px;
+	width:100%;
+}
+
+
+
+.ccformfield {
+  text-align: left;
+  margin: 5px auto; 
+  color: #006738; 
+}
+
+.ccformfield {
+	font-family:  Helvetica,Arial,sans-serif;
+}
+.ccbtn{
+	display:block;
+	border:none;
+	background:#006738;
+	color:#FFFFFF;
+	padding:12px 5px;
+	cursor:pointer;
+	text-decoration:none;
+	font-weight:bold;
+}
+.ccbtn:hover{
+	background:#999;
+
+}				  
+	
+				  
+												                                       											
